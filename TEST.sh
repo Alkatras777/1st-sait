@@ -1,3 +1,9 @@
+sudo -i
+ 
+ PORT=8443
+ WORKERS=1
+ 
+ cat >/root/install-mtproxy.sh <<'EOF'
  #!/usr/bin/env bash
  set -euo pipefail
  
