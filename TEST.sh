@@ -52,12 +52,12 @@
  chmod 0640 "${CONF_DIR}/proxy-secret" "${CONF_DIR}/proxy-multi.conf" "${CONF_DIR}/user-secret"
  
  echo "[7/10] Пишу настройки сервиса"
- cat > "${DEFAULTS_FILE}" <<CFG
+ cat > "${DEFAULTS_FILE}" 
  PORT=${PORT}
  WORKERS=${WORKERS}
- CFG
  
- cat > "${SERVICE_FILE}" <<'UNIT'
+ 
+ cat > "${SERVICE_FILE}" '
  [Unit]
  Description=Telegram MTProxy
  After=network-online.target
@@ -73,10 +73,10 @@
  
  [Install]
  WantedBy=multi-user.target
- UNIT
+ 
  
  echo "[8/10] Добавляю ежедневное обновление proxy-multi.conf"
- cat > "${UPDATE_SCRIPT}" <<'UPD'
+ cat > "${UPDATE_SCRIPT}" 
  #!/bin/sh
  set -eu
  
@@ -86,20 +86,20 @@
  curl -fsSL https://core.telegram.org/getProxyConfig -o "$TMP"
  install -o root -g mtproxy -m 0640 "$TMP" /etc/mtproxy/proxy-multi.conf
  systemctl try-restart mtproxy.service
- UPD
+
  
  chmod 0755 "${UPDATE_SCRIPT}"
  
- cat > "${UPDATE_SERVICE}" <<'USVC'
+ cat > "${UPDATE_SERVICE}" 
  [Unit]
  Description=Refresh Telegram MTProxy config
  
  [Service]
  Type=oneshot
  ExecStart=/usr/local/sbin/mtproxy-update-config
- USVC
+
  
- cat > "${UPDATE_TIMER}" <<'UTMR'
+ cat > "${UPDATE_TIMER}" 
  [Unit]
  Description=Daily refresh for Telegram MTProxy config
  
@@ -110,7 +110,7 @@
  
  [Install]
  WantedBy=timers.target
- UTMR
+
  
  echo "[9/10] Включаю сервисы"
  systemctl daemon-reload
