@@ -57,7 +57,7 @@
  WORKERS=${WORKERS}
  
  
- cat > "${SERVICE_FILE}" '
+ cat > "${SERVICE_FILE}" 
  [Unit]
  Description=Telegram MTProxy
  After=network-online.target
