@@ -1,7 +1,4 @@
-sudo -i
- 
- PORT=8443
- WORKERS=1
+
  #!/usr/bin/env bash
  set -euo pipefail
  
