@@ -61,7 +61,7 @@ echo -n "📦 Запуск контейнера... "
 sudo docker run -d \
   --name ${CONTAINER_NAME} \
   --restart unless-stopped \
-  -p ${PORT}:8445 \
+  -p ${PORT}:443 \
   -e SECRET="${SECRET}" \
   telegrammessenger/proxy > /dev/null 2>&1
 
