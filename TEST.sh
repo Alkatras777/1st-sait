@@ -1,9 +1,3 @@
-sudo -i
- 
- PORT=8443
- WORKERS=1
- 
- cat >/root/install-mtproxy.sh <<'EOF'
  #!/usr/bin/env bash
  set -euo pipefail
  
@@ -147,7 +141,6 @@ sudo -i
  echo
  echo "Локальная статистика:"
  echo "curl -s http://127.0.0.1:8888/stats"
- EOF
  
  chmod +x /root/install-mtproxy.sh
  PORT="$PORT" WORKERS="$WORKERS" /root/install-mtproxy.sh
