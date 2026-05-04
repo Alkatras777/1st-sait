@@ -18,3 +18,8 @@ vless://1834b941-c3b8-4087-a10a-32d4a5d27823@5.129.255.216:443?type=tcp&encrypti
 vless://0147f3f7-6468-42fb-90eb-2c931f752f85@5.129.255.216:8443?type=tcp&encryption=none&security=none#Z2-LDVPN
 vless://46df7b41-fdf2-4692-b519-4654953353f8@secure-z4.chickenkiller.com:443?type=tcp&encryption=none&security=reality&pbk=OQkJWtHYXCwY8iW-gi1fW33rTJTc-CW6-MeosIieM1U&fp=chrome&sni=ads.x5.ru&sid=19198345cace&spx=%2F#Z3-LDVPN
 vless://45f0de1b-044f-4a6b-8ecb-de3003026c2b@secure-z4.chickenkiller.com:8443?type=tcp&encryption=none&security=none#Z4-LDVPN
+hy2://fd6264b6-dd7e-4812-a970-9fe0006c3201@hy2nl.mooo.com:443?sni=hy2nl.mooo.com#NL-HY2-LDVPN
+vless://1834b941-c3b8-4087-a10a-32d4a5d27823@5.129.255.216:443?type=tcp&encryption=none&security=reality&pbk=US-irZSmJlyYN0Qq8OkU9K9iBSG1Ej1eIt4Dh9UThQo&fp=chrome&sni=avatars.mds.yandex.net&sid=df25556e&spx=%2F#Z1-LDVPN
+vless://0147f3f7-6468-42fb-90eb-2c931f752f85@5.129.255.216:8443?type=tcp&encryption=none&security=none#Z2-LDVPN
+vless://46df7b41-fdf2-4692-b519-4654953353f8@secure-z4.chickenkiller.com:443?type=tcp&encryption=none&security=reality&pbk=OQkJWtHYXCwY8iW-gi1fW33rTJTc-CW6-MeosIieM1U&fp=chrome&sni=ads.x5.ru&sid=19198345cace&spx=%2F#Z3-LDVPN
+vless://45f0de1b-044f-4a6b-8ecb-de3003026c2b@secure-z4.chickenkiller.com:8443?type=tcp&encryption=none&security=none#Z4-LDVPN
